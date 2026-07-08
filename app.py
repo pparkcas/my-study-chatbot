@@ -5,7 +5,7 @@ from google import genai
 st.title("🤖 나만의 진짜 Gemini 챗봇")
 
 # ⚠️기에 아까 복사한 AIzaSy...로 시작하는 키를 붙여넣으세요!
-GEMINI_API_KEY = "여기에_복사한_Gemini_키를_넣으세요"
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 
 # Gemini 클라이언트 초기화
 client = genai.Client(api_key=GEMINI_API_KEY)
